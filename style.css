@@ -1,0 +1,231 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fdfaf7;
+  color: #4b2e2e;
+}
+
+.logo {
+  background-color: #4b2e2e;
+  color: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 20px;
+  display: none;
+}
+
+.slider img.active {
+  display: block;
+}
+
+.button {
+  background-color: #e67c5f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #4b2e2e;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer h5 {
+  font-weight: 600;
+}
+
+.footer a {
+  color: #f8d5c0;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #f8d5c0;
+}
+
+.text-brown {
+  color: #5e3c2c;
+  /* Adjust to match your footer brown exactly */
+}
+
+/* Hover effect */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px #5e3c2c;
+}
+
+.product-card img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-title,
+.card-text {
+  margin-bottom: 0.5rem;
+}
+
+.chocolate-card {
+  background-color: #cbc6b92a;
+  /* chocolate brown */
+  color: #fff;
+}
+
+.rec {
+  background-color: #301c1c;
+  /* chocolate brown */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.view {
+  color: #f8d5c0;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+/* For tablets and medium screens */
+@media screen and (max-width: 992px) {
+  .logo {
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+  }
+
+  .slider img {
+    border-radius: 15px;
+  }
+
+  .product-card img {
+    height: 200px;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+}
+
+/* Responsive tweaks for "rec" section */
+
+/* Tablets: stack into two columns */
+@media screen and (max-width: 992px) {
+  .rec {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .rec h5 {
+    font-size: 16px;
+  }
+}
+
+/* Mobile: stack into one column */
+@media screen and (max-width: 600px) {
+  .row > div {
+    margin-bottom: 15px; /* spacing between cards */
+  }
+
+  .rec {
+    padding: 15px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .rec h5 {
+    font-size: 15px;
+  }
+
+  .rec .view {
+    font-size: 12px;
+    padding: 6px 12px;
+    width: 100%; /* full-width button for easy tapping */
+  }
+}
+
+
+/* For mobile screens */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+  }
+
+  .slider img {
+    border-radius: 10px;
+  }
+
+  .product-card img {
+    height: 150px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 20px 10px;
+    font-size: 13px;
+  }
+
+  .footer h5 {
+    font-size: 14px;
+  }
+
+  .social-icons a {
+    font-size: 16px;
+    margin-right: 6px;
+  }
+}
